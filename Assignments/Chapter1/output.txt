@@ -1,0 +1,5 @@
+fmt.Println (5+3) will return 8
+fmt.Println ("5 + 3") will return the literal string "5 + 3"
+fmt.Println (5 + '3') will return 56. This is because '3' is a rune, which is a numerical value
+that can be added to integers. The corresponding int for '3' is 51, so 51 + 5 = 56.
+fmt.Println (5 + "3") will produce an error. This is because unlike adding an int and a rune (as in the previous example), this statement is adding an int and a string, two variable types which are incompatible, resulting in an error.
